@@ -1,0 +1,54 @@
+{extend name="index/base"}
+
+{block name="body"}
+    <div class="layui-body" style="padding:25px;">
+        <div class="layui-container-fluid">
+            <div class="layui-row ">
+
+                <div class="layui-col-md12 ">
+                    <div class="layui-elem-quote ">
+                        <a href="http://www.layui.com" class="layui-btn layui-btn-normal">删除会员</a>
+                        <a href="{:url('Index/member_add')}" class="layui-btn layui-btn-warm">添加会员</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                <legend>添加会员</legend>
+            </fieldset>
+
+            <form class="layui-form" action="{:url('Index/member_add')}" lay-filter="example" method="post">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">会员名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入会员名称" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">会员密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{/block}
+{block name="footer"}
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
+{/block}
