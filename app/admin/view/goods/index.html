@@ -1,0 +1,49 @@
+{extend name="index/base"}
+
+{block name="body"}
+<div class="layui-body" style="padding:25px;">
+    <div class="layui-col-md12">
+    <div class="layui-elem-quote ">商品类别</div>
+</div>
+<div class="layui-col-md12 ">
+    <div class="layui-elem-quote ">
+        <a href="http://www.layui.com" class="layui-btn layui-btn-normal">删除会员</a>
+        <a href="{:url('Goods/goods_add')}" class="layui-btn layui-btn-warm">添加类别</a>
+    </div>
+</div>
+    <table class="layui-table">
+        <colgroup>
+            <col width="150">
+            <col width="250">
+            <col width="300">
+            <col width="600">
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>全选/全不选</th>
+            <th>用户名</th>
+            <th>时间</th>
+            <th>商品类别</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox" name=""></td>
+            <td>许闲心</td>
+            <td>2016-11-28</td>
+            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+            <td><a  class="layui-btn notice">删除</a> <a href="" class="layui-btn ">修改</a> </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name=""></td>
+            <td>许闲心</td>
+            <td>2016-11-28</td>
+            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+            <td><a  class="layui-btn notice">删除</a> <a href="" class="layui-btn ">修改</a> </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+{/block}
