@@ -15,7 +15,6 @@
         <colgroup>
             <col width="150">
             <col width="250">
-            <col width="300">
             <col width="600">
             <col>
         </colgroup>
@@ -23,19 +22,19 @@
         <tr>
             <th>全选/全不选</th>
             <th>用户名</th>
-            <th>时间</th>
             <th>商品类别</th>
             <th>操作</th>
         </tr>
         </thead>
         <tbody>
+        {volist name="arr" id="vo"}
         <tr>
             <td><input type="checkbox" name=""></td>
-            <td>许闲心</td>
-            <td>2016-11-28</td>
+            <td>{$vo.laver|str_repeat='——',###}{$vo.goods_center}</td>
             <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-            <td><a  class="layui-btn notice">删除</a> <a href="" class="layui-btn ">修改</a> </td>
+            <td><a href="{:url('Goods/goods_del',['id'=>$vo['goods_id']])}" class="layui-btn notice">删除</a> <a href="{:url('Goods/goods_upd]',['id'=>$vo['goods_id']])}" class="layui-btn ">修改</a> </td>
         </tr>
+        {/volist}
         <tr>
             <td><input type="checkbox" name=""></td>
             <td>许闲心</td>
@@ -47,3 +46,4 @@
     </table>
 </div>
 {/block}
+

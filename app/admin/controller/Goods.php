@@ -19,8 +19,8 @@ class Goods extends Index
 //        $arra = $this->goods_cate();
         $mc = new ModelGoods();
         $arr = $mc->goods_msel();
-        print_r($arr);die;
-
+//        print_r($arr);die;
+        $this->assign("arr",$arr);
         return $this->fetch();
     }
 
@@ -45,5 +45,27 @@ class Goods extends Index
         $this->assign('arr',$arr);
         return $this->fetch();
     }
+
+    //修改栏目
+    public function goods_upd(){
+
+    }
+
+    //删除栏目
+    public function goods_del($id){
+
+        $mc = new ModelGoods();
+        $arr = $mc->goods_mdel($id);
+        $res = Db::table('tp_goods')->delete($arr);
+
+        if($res){
+            $this->success("删除成功",url('Goods/index'));
+        }else{
+            $this->error("删除失败");
+        }
+
+    }
+
+
 
 }

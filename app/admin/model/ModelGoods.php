@@ -21,19 +21,42 @@ class ModelGoods extends Model
     public function goods_msel($arr = [],$pid = 0,$laver = 0){
 
         $arr = $this->index();
-//        echo count($arr);die;
+
         static $data = [];
 
         foreach($arr as $key=>$val){
 
             if($val['goods_pid'] == $pid ){
-                $data['laver'] = $laver;
+                $val['laver'] = $laver;
                 $data[] = $val;
                 $this->goods_msel($arr,$val['goods_id'],$laver+1);
             }
 
         }
         return $data;
+
+    }
+
+    public function goods_mdel($id,$arr=[]){
+        //获取栏目数据
+        $arr = $this->index();
+        //定义静态数组
+        static $data = [];
+        //
+        $da[] = $id;
+
+        foreach($arr as $key=>$val){
+
+            if($val['goods_pid'] == $id){
+
+                $data[] = $val;
+                $da[] = $val['goods_id'];
+                $this->goods_mdel($val['goods_id'],$arr);
+            }
+
+        }
+        return $da;
+        return array_unique($da);
 
     }
 
