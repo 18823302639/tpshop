@@ -5,8 +5,9 @@
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
     <legend>默认风格的Tab</legend>
 </fieldset>
-
+<form class="layui-form" >
 <div class="layui-tab">
+
     <ul class="layui-tab-title">
         <li class="layui-this">文章内容</li>
         <li>SEO管理</li>
@@ -14,7 +15,7 @@
     <div class="layui-tab-content">
         <div class="layui-tab-item layui-show">
 
-            <form class="layui-form" action="" lay-filter="example">
+
                 <div class="layui-form-item">
                     <label class="layui-form-label">文章标题</label>
                     <div class="layui-input-block">
@@ -40,14 +41,22 @@
                     <div class="layui-inline">
                         <label class="layui-form-label">文章作者</label>
                         <div class="layui-input-inline">
-                            <input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" placeholder="一叶知秋" class="layui-input">
+                            <input type="tel" name="article_author"  autocomplete="off" placeholder="一叶知秋" class="layui-input">
                         </div>
                     </div>
                     <div class="layui-inline">
                         <label class="layui-form-label">文章来源</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="email" lay-verify="email" autocomplete="off" placeholder="中港星" class="layui-input">
+                            <input type="text" name="article_source"  autocomplete="off" placeholder="中港星" class="layui-input">
                         </div>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文章封面图</label>
+                    <input type="file" name="article_thum">
+                    <div class="layui-inline layui-word-aux">
+                        限制在2M以内
                     </div>
                 </div>
 
@@ -55,7 +64,7 @@
                     <label class="layui-form-label">文本域</label>
                     <div class="layui-input-block">
                         <!-- 加载编辑器的容器 -->
-                        <script id="container" name="content" type="text/plain">
+                        <script id="container" name="article_text" type="text/plain">
 
                         </script>
                     </div>
@@ -63,44 +72,45 @@
 
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                        <button type="button" onclick="fn()" class="layui-btn"  lay-filter="demo1">立即提交</button>
                     </div>
                 </div>
-            </form>
+
 
         </div>
         <div class="layui-tab-item">
-            <form class="layui-form" action="" lay-filter="example">
+
                 <div class="layui-form-item">
                     <label class="layui-form-label">SEO标题</label>
                     <div class="layui-input-block">
-                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+                        <input type="text" name="article_stitle"  autocomplete="off" placeholder="请输入标题" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">SEO关键字</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+                        <input type="text" name="article_skeyw"  placeholder="请输入" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item layui-form-text">
                     <label class="layui-form-label">SEO描述</label>
                     <div class="layui-input-block">
-                        <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                        <textarea name="article_sdes" placeholder="请输入内容" class="layui-textarea"></textarea>
                     </div>
                 </div>
                 <div class="layui-form-item layui-form-text">
                     <label class="layui-form-label"></label>
                     <div class="layui-input-block">
-                        <button type="submit" class="layui-btn layui-btn-normal">百搭按钮</button>
+                        <button type="button" onclick="fn()" class="layui-btn layui-btn-normal">立即提交</button>
                     </div>
                 </div>
 
-            </form>
 
         </div>
     </div>
+
 </div>
+</form>
 
 
 <!-- 配置文件 -->
@@ -111,10 +121,35 @@
 <script type="text/javascript">
     var ue = UE.getEditor('container');
 
-
-
-
 </script>
 
 
 {/block}
+
+{block name="footer"}
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    function fn(){
+        var data = $('form').serializeArray();
+        console.log(data);
+        url = "{:url('Article/article_add')}";
+        $.ajax({
+
+            type:'post',
+            url:url,
+            dataType:'json',
+            data:data,
+            success:function(succ){
+                console.log('成功：'+succ);
+            },
+            error:function(error){
+             console.log('失败：'+error);
+            }
+
+        });
+
+    }
+</script>
+{/block}
+
