@@ -2,7 +2,7 @@
 
 {block name="body"}
 
-<div class="layui-body" style="padding:25px;">
+
     <form class="layui-form" action="{:url('Goods/goods_add')}" method="post">
         <div class="layui-form-item">
             <label class="layui-form-label">选择栏目</label>
@@ -30,21 +30,10 @@
             </div>
         </div>
     </form>
-</div>
+
 
 {/block}
 {block name="footer"}
-<script>
-    //Demo
-    layui.use('form', function(){
-        var form = layui.form;
 
-        // //监听提交
-        // form.on('submit(formDemo)', function(data){
-        //     layer.msg(JSON.stringify(data.field));
-        //     return false;
-        // });
-    });
-</script>
 {/block}
 

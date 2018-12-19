@@ -16,10 +16,8 @@ use \think\Request;
 class Goods extends Index
 {
     public function index(){
-//        $arra = $this->goods_cate();
         $mc = new ModelGoods();
         $arr = $mc->goods_msel();
-//        print_r($arr);die;
         $this->assign("arr",$arr);
         return $this->fetch();
     }

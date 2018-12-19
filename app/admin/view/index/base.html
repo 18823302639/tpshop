@@ -61,7 +61,7 @@
                 <li class="layui-nav-item ">
                     <a class="" href="javascript:;">文档管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">文章列表</a></dd>
+                        <dd><a href="{:url('Article/index')}">文章列表</a></dd>
                         <dd><a href="javascript:;">列表二</a></dd>
                         <dd><a href="javascript:;">列表三</a></dd>
                         <dd><a href="">超链接</a></dd>
@@ -89,8 +89,10 @@
             </ul>
         </div>
     </div>
+    <div class="layui-body" style="padding:25px;">
+        {block name="body"}{/block}
+    </div>
 
-    {block name="body"}{/block}
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
@@ -99,10 +101,13 @@
     <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> 公共查询 </a>
 </div>
 <script src="/layui/layui.js"></script>
+
 <script>
+
     //JavaScript代码区域
-    layui.use('element', function(){
-        var element = layui.element;
+    layui.use(['element','form'], function(){
+        var element = layui.element,
+            form = layui.form;
 
     });
 
