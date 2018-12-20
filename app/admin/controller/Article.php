@@ -42,17 +42,20 @@ class Article extends Controller
 
     //*****栏目管理********/
     public function column_index(){
-
+        $mc = new ModelGoods();
         $arr = db('column')->alias('co')
                         ->join("category ca","co.category_id = ca.category_id ")
                         ->select();
-//        print_r($arr);die;
-        $this->assign("arr",$arr);
+        $data = $mc->column_msele($arr);
+//        print_r($data);die;
+
+        $this->assign("arr",$data);
 
         return $this->fetch();
 
     }
-
+    
+    //栏目添加
     public function column_add(){
         if(request()->isPost()){
             $data = input('post.');
@@ -65,12 +68,10 @@ class Article extends Controller
             }
         }
         $mc = new ModelGoods();
-        $arr = $mc->index('tp_article');
-
+        $arr = $mc->column_msel('tp_article');
         $list = db('category')->select();
-
-
-
+//        print_r($arr);die;
+        $this->assign("arr",$arr);
         $this->assign("list",$list);
         return $this->fetch();
     }

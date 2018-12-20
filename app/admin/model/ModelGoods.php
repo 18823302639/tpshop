@@ -34,16 +34,16 @@ class ModelGoods extends Model
 
     }
 
-    public function index(){
 
-        $arr = Db::table('tp_goods')->select();
+    public function index($table){
+
+        $arr = Db::table($table)->select();
         return $arr;
-//        return $this->goods_msel($arr);
     }
-
+    /******* 商品分类 ********/
     public function goods_msel($arr = [],$pid = 0,$laver = 0){
 
-        $arr = $this->index();
+        $arr = $this->index('tp_goods');
 
         static $data = [];
 
@@ -60,7 +60,7 @@ class ModelGoods extends Model
 
     }
 
-
+    //商品分类删除
     public function goods_mdel($id,$arr=[]){
         //获取栏目数据
         $arr = $this->index();
@@ -84,5 +84,35 @@ class ModelGoods extends Model
         return array_unique($da);
 
     }
+
+
+    /******栏目管理*****/
+    public function column_msel($arr = [],$id = 0,$laver = 0){
+        $arr = $this->index('tp_column');
+//        print_r($arr);die;
+        static $data = [];
+        foreach($arr as $key=>$val){
+            if($val['column_pid'] == $id){
+                $val['laver'] = $laver;
+                $data[] = $val;
+                $this->column_msel($arr,$val['column_id'],$laver+1);
+            }
+        }
+        return $data;
+    }
+
+    public function column_msele($arr = [],$id = 0,$laver = 0){
+//        print_r($arr);die;
+        static $data = [];
+        foreach($arr as $key=>$val){
+            if($val['column_pid'] == $id){
+                $val['laver'] = $laver;
+                $data[] = $val;
+                $this->column_msele($arr,$val['column_id'],$laver+1);
+            }
+        }
+        return $data;
+    }
+
 
 }

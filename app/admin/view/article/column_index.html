@@ -32,7 +32,7 @@
     {volist name="arr" id="vo"}
     <tr>
         <td><input type="checkbox" name=""></td>
-        <td>{$vo.column_center}</td>
+        <td> {$vo.laver|str_repeat='——',###}{$vo.column_center}</td>
         <td> {$vo.category_name} </td>
         <td>{$vo.column_time|substr=###,0,10}</td>
         <td>

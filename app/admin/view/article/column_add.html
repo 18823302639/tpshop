@@ -11,7 +11,7 @@
                 <option value="0">顶级栏目</option>
                 {notempty name="arr" }
                 {volist name="arr" id="vo"}
-                <option value="{$vo.column_id}">{$vo.column_center}</option>
+                <option value="{$vo.column_id}">{$vo.laver|str_repeat='--',###}{$vo.column_center}</option>
                 {/volist}
                 {/notempty}
             </select>
