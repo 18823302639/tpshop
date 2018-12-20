@@ -15,6 +15,7 @@ use \think\Request;
 
 class Goods extends Index
 {
+    //商品管理
     public function index(){
         $mc = new ModelGoods();
         $arr = $mc->goods_msel();

@@ -1,0 +1,49 @@
+{extend name="index/base"}
+
+{block name="body"}
+
+
+<form class="layui-form" action="{:url('Article/column_add')}" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">选择栏目</label>
+        <div class="layui-input-block">
+            <select name="column_pid" lay-verify="required">
+                <option value="0">顶级栏目</option>
+                {notempty name="arr" }
+                {volist name="arr" id="vo"}
+                <option value="{$vo.column_id}">{$vo.column_center}</option>
+                {/volist}
+                {/notempty}
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">栏目类别</label>
+        <div class="layui-input-block">
+            <select name="category_id" lay-verify="required">
+                {volist name="list" id="val"}
+                <option value="{$val.category_id}">{$val.category_name}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">输入框</label>
+        <div class="layui-input-block">
+            <input type="text" name="column_center" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+
+
+{/block}
+{block name="footer"}
+
+{/block}
+

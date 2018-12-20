@@ -5,7 +5,7 @@
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
     <legend>默认风格的Tab</legend>
 </fieldset>
-<form class="layui-form" >
+<form action="{:url('Article/article_add')}" method="post" class="layui-form" enctype="multipart/form-data" >
 <div class="layui-tab">
 
     <ul class="layui-tab-title">
@@ -24,9 +24,9 @@
                 </div>
 
                 <div class="layui-form-item">
-                    <label class="layui-form-label">选择框</label>
+                    <label class="layui-form-label">文章类型</label>
                     <div class="layui-input-block">
-                        <select name="" lay-filter="aihao">
+                        <select name="article_type" lay-filter="aihao">
                             <option value=""></option>
                             <option value="0">写作</option>
                             <option value="1">阅读</option>
@@ -54,7 +54,7 @@
 
                 <div class="layui-form-item">
                     <label class="layui-form-label">文章封面图</label>
-                    <input type="file" name="article_thum">
+                    <input id="file" type="file" name="article_thum">
                     <div class="layui-inline layui-word-aux">
                         限制在2M以内
                     </div>
@@ -72,7 +72,7 @@
 
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <button type="button" onclick="fn()" class="layui-btn"  lay-filter="demo1">立即提交</button>
+                        <button type="submit"  class="layui-btn"  lay-filter="demo1">立即提交</button>
                     </div>
                 </div>
 
@@ -101,7 +101,7 @@
                 <div class="layui-form-item layui-form-text">
                     <label class="layui-form-label"></label>
                     <div class="layui-input-block">
-                        <button type="button" onclick="fn()" class="layui-btn layui-btn-normal">立即提交</button>
+                        <button type="submit"  class="layui-btn layui-btn-normal">立即提交</button>
                     </div>
                 </div>
 
@@ -133,12 +133,23 @@
     function fn(){
         var data = $('form').serializeArray();
         console.log(data);
+        var files = $('#file').prop('files');
+        // var file = this.files[0];
+
+        var formdata = new FormData();
+        console.log(files[0]);
+        formdata.append("file",'123',files[0]);
+
+        console.log(formdata);
         url = "{:url('Article/article_add')}";
         $.ajax({
 
             type:'post',
             url:url,
             dataType:'json',
+            cache:false,
+            processDate:false,
+            contentType:false,
             data:data,
             success:function(succ){
                 console.log('成功：'+succ);

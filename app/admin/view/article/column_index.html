@@ -1,0 +1,54 @@
+{extend name="index/base"}
+
+{block name="body"}
+
+<div class="layui-col-md12">
+    <div class="layui-elem-quote ">栏目列表</div>
+</div>
+<div class="layui-col-md12 ">
+    <div class="layui-elem-quote ">
+        <a href="http://www.layui.com" class="layui-btn layui-btn-normal">删除栏目</a>
+        <a href="{:url('Article/column_add')}" class="layui-btn layui-btn-warm">添加栏目</a>
+    </div>
+</div>
+<table class="layui-table">
+    <colgroup>
+        <col width="150">
+        <col width="250">
+        <col width="500">
+        <col width="500">
+        <col>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>全选/全不选</th>
+        <th>栏目名</th>
+        <th>栏目类别</th>
+        <th>添加时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {volist name="arr" id="vo"}
+    <tr>
+        <td><input type="checkbox" name=""></td>
+        <td>{$vo.column_center}</td>
+        <td> {$vo.category_name} </td>
+        <td>{$vo.column_time|substr=###,0,10}</td>
+        <td>
+            <a href="{:url('Article/column_del',['id'=>$vo['column_id']])}" class="layui-btn notice">访问</a>
+            <a href="{:url('Article/column_del',['id'=>$vo['column_id']])}" class="layui-btn notice">删除</a> <a href="{:url('Article/column_upd]',['id'=>$vo['column_id']])}" class="layui-btn ">修改</a> </td>
+    </tr>
+    {/volist}
+    <tr>
+        <td><input type="checkbox" name=""></td>
+        <td>许闲心</td>
+        <td>2016-11-28</td>
+        <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+        <td><a  class="layui-btn notice">删除</a> <a href="" class="layui-btn ">修改</a> </td>
+    </tr>
+    </tbody>
+</table>
+
+{/block}
+

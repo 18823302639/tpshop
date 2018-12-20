@@ -4,28 +4,101 @@
  * User: Administrator
  * Date: 2018/12/19
  * Time: 15:55
- * 文章管理
+ * 文章、栏目、类别管理
  */
 namespace app\admin\controller;
+use app\admin\Model\ModelGoods;
 use \think\Controller;
-use \think\Db;
-
 
 class Article extends Controller
 {
 
     public function index(){
-        $arr = db('article')->select();
+        $arr = db('article')->order('article_time desc')->paginate(10);
         $this->assign('arr',$arr);
         return $this->fetch();
     }
 
 
-
+    //添加文章
     public function article_add(){
 
-        
+        if(request()->isPost()){
+            $data = input('post.');
+            $mc = new ModelGoods();
+            $article_thum = $mc->uploads();
+            $data['article_time'] = date('Y-m-d H:i:s',time());
+            $data['article_thum'] = $article_thum;
+            $res = db('article')->insert($data);
+            if($res){
+                $this->success("添加成功",url('Article/index'));
+            }else{
+                $this->error("添加失败".$data['article_thum']);
+            }
+
+        }
         return $this->fetch();
     }
+
+    //*****栏目管理********/
+    public function column_index(){
+
+        $arr = db('column')->alias('co')
+                        ->join("category ca","co.category_id = ca.category_id ")
+                        ->select();
+//        print_r($arr);die;
+        $this->assign("arr",$arr);
+
+        return $this->fetch();
+
+    }
+
+    public function column_add(){
+        if(request()->isPost()){
+            $data = input('post.');
+            $data['column_time'] = date("Y-m-d H:i:s",time());
+            $res = db('column')->insert($data);
+            if($res){
+                $this->success("添加栏目成功",url('Article/column_index'));
+            }else{
+                $this->error("添加栏目失败");
+            }
+        }
+        $mc = new ModelGoods();
+        $arr = $mc->index('tp_article');
+
+        $list = db('category')->select();
+
+
+
+        $this->assign("list",$list);
+        return $this->fetch();
+    }
+
+
+
+
+
+    //******类别管理*******/
+    public function category_index(){
+        $arr = db('category')->select();
+        $this->assign('arr',$arr);
+        return $this->fetch();
+    }
+
+    public function category_add(){
+        if(request()->isPost()){
+            $data = input("post.");
+            $res = db('category')->insert($data);
+            if($res){
+                $this->success("添加类别成功",url('Article/category_index'));
+            }else{
+                $this->error("添加类别失败");
+            }
+        }
+        return $this->fetch();
+    }
+
+
 
 }

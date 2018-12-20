@@ -1,0 +1,33 @@
+{extend name="index/base"}
+
+{block name="body"}
+
+
+<form class="layui-form" action="{:url('Article/category_add')}" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">类别名称</label>
+        <div class="layui-input-block">
+            <input class="layui-input" type="text" name="category_name" required  lay-verify="required" placeholder="请输入描述">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">类别描述</label>
+        <div class="layui-input-block">
+            <input type="text" name="category_dec" required  lay-verify="required" placeholder="请输入描述" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+
+
+{/block}
+{block name="footer"}
+
+{/block}
+

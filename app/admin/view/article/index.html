@@ -17,6 +17,7 @@
         <table class="layui-table">
             <colgroup>
                 <col width="50">
+                <col width="100">
                 <col width="200">
                 <col width="250">
                 <col width="100">
@@ -27,20 +28,23 @@
             <thead>
             <tr>
                 <th> 全选/反选 </th>
+                <th> 缩略图 </th>
                 <th> 标题 </th>
                 <th> 内容 </th>
                 <th> 作者 </th>
-                <th> 时间 </th>
+                <th> 分类 </th>
                 <th> 操作 </th>
             </tr>
             </thead>
             <tbody>
+            {volist name="arr" id="vo"}
             <tr>
                 <td> <input class="input" type="checkbox"> </td>
-                <td>汉族</td>
-                <td>1989-10-14</td>
-                <td>人生似修行</td>
-                <td>格言</td>
+                <td><img height="50px" src="/uploads/{$vo.article_thum}" alt=""> </td>
+                <td>{$vo.article_title}</td>
+                <td>{$vo.article_text}</td>
+                <td>{$vo.article_author}</td>
+                <td>{$vo.article_type}</td>
                 <td>
                     <div class="layui-btn-group">
                         <button class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
@@ -48,41 +52,12 @@
                     </div>
                 </td>
             </tr>
-            <tr>
-                <td>张爱玲</td>
-                <td>汉族</td>
-                <td>1920-09-30</td>
-                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                <td>格言</td>
-                <td>操作</td>
-            </tr>
-            <tr>
-                <td>Helen Keller</td>
-                <td>拉丁美裔</td>
-                <td>1880-06-27</td>
-                <td> Life is either a daring adventure or nothing.</td>
-                <td>格言</td>
-                <td>操作</td>
-            </tr>
-            <tr>
-                <td>岳飞</td>
-                <td>汉族</td>
-                <td>1103-北宋崇宁二年</td>
-                <td>教科书再滥改，也抹不去“民族英雄”的事实</td>
-                <td>格言</td>
-                <td>操作</td>
-            </tr>
-            <tr>
-                <td>孟子</td>
-                <td>华夏族（汉族）</td>
-                <td>公元前-372年</td>
-                <td>猿强，则国强。国强，则猿更强！ </td>
-                <td>格言</td>
-                <td>操作</td>
-            </tr>
+            {/volist}
+
             </tbody>
         </table>
+        {$arr->render()}
     </div>
 
-123456
+
 {/block}
