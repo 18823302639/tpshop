@@ -30,7 +30,6 @@ class ModelGoods extends Model
             // 上传失败获取错误信息
             return $file->getError();
         }
-//        return $article_thum;
 
     }
 
@@ -89,7 +88,7 @@ class ModelGoods extends Model
     /******栏目管理*****/
     public function column_msel($arr = [],$id = 0,$laver = 0){
         $arr = $this->index('tp_column');
-//        print_r($arr);die;
+
         static $data = [];
         foreach($arr as $key=>$val){
             if($val['column_pid'] == $id){
@@ -102,7 +101,7 @@ class ModelGoods extends Model
     }
 
     public function column_msele($arr = [],$id = 0,$laver = 0){
-//        print_r($arr);die;
+
         static $data = [];
         foreach($arr as $key=>$val){
             if($val['column_pid'] == $id){

@@ -1,0 +1,336 @@
+﻿{extend name="index/base"}
+{block name="meta"}
+<title>123</title>
+{/block}
+{block name="body"}
+
+
+    <!--Slider-->
+    <div class="banner">
+        <div id="top" class="callbacks_container">
+            <ul class="rslides" id="slider3">
+                {volist name="arr" id="vo"}
+                <li>
+                    <div class="banner1"><img src="__STA__/index/images/home_banner011.png" class="img-responsive" alt="banner" style="width: 100%;" /></div>
+                </li>
+                {/volist}
+                <li>
+                    <div class="banner1 banner2"><img src="__STA__/index/images/home_banner02.png" class="img-responsive" alt="banner" style="width: 100%;" /></div>
+                </li>
+                <li>
+                    <div class="banner1 banner3"><img src="__STA__/index/images/home_banner03.png" class="img-responsive" alt="banner" style="width: 100%;" /></div>
+                </li>
+                <li>
+                    <div class="banner1 banner4"><img src="__STA__/index/images/home_banner04.png" class="img-responsive" alt="banner" style="width: 100%;" /></div>
+                </li>
+                <li>
+                    <div class="banner1 banner5"><img src="__STA__/index/images/home_banner05.png" class="img-responsive" alt="banner" style="width: 100%;" /></div>
+                </li>
+            </ul>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!--/Slider-->
+
+    <div class="heng_box">
+        <div class="plan_com clearfix">
+            <div class="container">
+                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <h4>主营业务</h4>
+                    <div class="en">MAIN BUSINESS</div>
+                </div>
+                <div class="row c1_list">
+                    <!--Slider-->
+                    <div class="Box">
+                        <div class="content content_zhuying">
+                            <div class="Box_con clearfix">
+                                <span class="btnl btnt" id="btnl1"></span>
+                                <span class="btnr btnt" id="btnr1"></span>
+                                <div class="conbox" id="BoxUl1">
+                                    <ul data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                                        <li class="P0 cur">
+                                            <div class="item">
+                                                <div class="c1_titleText">全身养生灸</div>
+                                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_11.jpg" class="img-responsive"></div>
+                                                <div class="c1_desc">
+                                                    养生灸以激活人体的自愈机能为主要
+                                                    手段，配合以局部靶组织受药浓度高
+                                                    全身血药浓度低的用药...
+                                                </div>
+                                                <div class="c1_btn"><a href="#">查看更多</a></div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item">
+                                                <div class="c1_titleText">瘦身灸</div>
+                                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_12.jpg" class="img-responsive"></div>
+                                                <div class="c1_desc">
+                                                    艾灸疗法能减肥瘦身、防病在我国已
+                                                    有数千年历史。早在春秋战国时期人
+                                                    们已经开始广泛使用艾灸...
+                                                </div>
+                                                <div class="c1_btn"><a href="#">查看更多</a></div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item">
+                                                <div class="c1_titleText">睡眠调理灸</div>
+                                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_13.jpg" class="img-responsive"></div>
+                                                <div class="c1_desc">
+                                                    艾灸治疗失眠,不仅可以较好的改善
+                                                    人们的睡眠,更可以放松人们的身心
+                                                    ,让人们...
+                                                </div>
+                                                <div class="c1_btn"><a href="#">查看更多</a></div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item">
+                                                <div class="c1_titleText">风湿骨痛灸</div>
+                                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_14.jpg" class="img-responsive"></div>
+                                                <div class="c1_desc">
+                                                    膝关节疼痛是一个多原因的引发的疾
+                                                    病。如:风湿、劳损、体重过重,  膝关
+                                                    节是人体最复杂的关节,本身...
+                                                </div>
+                                                <div class="c1_btn"><a href="#">了解详情</a></div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item">
+                                                <div class="c1_titleText">产品材料系列</div>
+                                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_11.jpg" class="img-responsive"></div>
+                                                <div class="c1_desc">
+                                                    养生灸以激活人体的自愈机能为主要
+                                                    手段，配合以局部靶组织受药浓度高
+                                                    全身血药浓度低的用药...
+                                                </div>
+                                                <div class="c1_btn"><a href="#">查看更多</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        //滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+                        LbMove('BoxUl1', 'btnl1', 'btnr1', 'BoxSwitch1', true, 'left', true, 220, 1000, 5000, 4);
+                    </script>
+                    <!--/Slider-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heng_box heng_box_1">
+        <div class="plan_com clearfix">
+            <div class="container">
+                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <h4>优惠活动</h4>
+                    <div class="en">DISCOUNT ACTIVITY</div>
+                </div>
+                <div class="row c1_list" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="item">
+                            <div class="c1_img"><img src="__STA__/index/images/upload/pro_01.png" class="img-responsive" /></div>
+                            <div class="c1_titleText c1_titleText_2">加油站地面快速修复速修复</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="item">
+                            <div class="c1_img"><img src="__STA__/index/images/upload/pro_01.png" class="img-responsive" /></div>
+                            <div class="c1_titleText c1_titleText_2">加油站地面快速修复速修复地面地面地面</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="item">
+                            <div class="c1_img"><img src="__STA__/index/images/upload/pro_01.png" class="img-responsive" /></div>
+                            <div class="c1_titleText c1_titleText_2">城市慢行交通系统</div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a class="item">
+                            <div class="c1_img"><img src="__STA__/index/images/upload/pro_01.png" class="img-responsive" /></div>
+                            <div class="c1_titleText c1_titleText_2">彩色防滑路面</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="more_plan center PT20" data-sr="move 100px, over .8s,wait .2s, enter bottom"><a href="#">更多产品</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="heng_box heng_box_2">
+        <div class="plan_com clearfix">
+            <div class="container">
+                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <h4>品牌店面</h4>
+                    <div class="en">BRAND STORE</div>
+                </div>
+                <div class="row btn_tab btn_tab_pro MB30">
+                    <div class="col-md-3 col-sm-3 col-xs-3 P10"><a href="javascript:;">健翔店</a></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 P10"><a href="javascript:;">万柳店</a></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 P10"><a href="javascript:;">金宝店</a></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 P10"><a href="javascript:;" class="cur">金源店</a></div>
+                </div>
+                <div class="div_msg" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    金源店于2007年10月16日正式营业，是绿岛公司在国内建立的第一家专业艾灸养生馆，会所的理念是：“全心全意为客人服务”。倡导用最古老、最自然、最有效的方法—
+                    艾灸养生，来为大众健康服务。 地址：海淀区世纪城三期时雨园北门甲2-5号，预约热线：010-88866499。
+                </div>
+                <div class="row c1_list PT20 hidden-xs" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <div class="col-md-3 col-sm-12 col-xs-12 P0">
+                        <div class="col-md-12 col-sm-12 col-xs-12 P0">
+                            <a class="item item_1">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_03.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 col-xs-12 P0">
+                        <div class="col-md-4 col-sm-4 col-xs-12 heng_box_2">
+                            <a class="item">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_02.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 heng_box_2">
+                            <a class="item">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_02.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 heng_box_2">
+                            <a class="item">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_02.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 heng_box_2">
+                            <a class="item">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_02.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 heng_box_2">
+                            <a class="item">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_02.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 heng_box_2">
+                            <a class="item">
+                                <div class="c1_img"><img src="__STA__/index/images/upload/pro_02.jpg" class="img-responsive"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heng_box heng_box_2">
+        <div class="plan_com clearfix">
+            <div class="container">
+                <div class="div_title center" data-sr="move 100px, over .8s,wait .2s, enter bottom">
+                    <h4>客户评价</h4>
+                    <div class="en">EVALUATION</div>
+                </div>
+                <div class="row c1_list">
+                    <!--Slider-->
+                    <div class="Box">
+                        <div class="content">
+                            <div class="banner_re">
+                                <div class="banner_con">
+                                    <ul>
+                                        <li class="P0">
+                                            <div class="item_re">
+                                                <div class="col-md-2 col-sm-2 col-xs-5">
+                                                    <div class="c1_img"><img src="__STA__/index/images/upload/pro_12.jpg" class="img-responsive"></div>
+                                                </div>
+                                                <div class="col-md-10 col-sm-10 col-xs-7">
+                                                    <div class="c1_titleText">
+                                                        牛女士
+                                                    </div>
+                                                    <div class="c1_desc">
+                                                        患者于2个月前到店时，由于第4—6颈椎间盘突出压迫神经根，
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item_re">
+                                                <div class="col-md-2 col-sm-2 col-xs-5">
+                                                    <div class="c1_img"><img src="__STA__/index/images/upload/pro_12.jpg" class="img-responsive"></div>
+                                                </div>
+                                                <div class="col-md-10 col-sm-10 col-xs-7">
+                                                    <div class="c1_titleText">
+                                                        牛女士
+                                                    </div>
+                                                    <div class="c1_desc">
+                                                        患者于2个月前到店时，由于第4—6颈椎间盘突出压迫神经根，
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="P0">
+                                            <div class="item_re">
+                                                <div class="col-md-2 col-sm-2 col-xs-5">
+                                                    <div class="c1_img"><img src="__STA__/index/images/upload/pro_12.jpg" class="img-responsive"></div>
+                                                </div>
+                                                <div class="col-md-10 col-sm-10 col-xs-7">
+                                                    <div class="c1_titleText">
+                                                        牛女士
+                                                    </div>
+                                                    <div class="c1_desc">
+                                                        患者于2个月前到店时，由于第4—6颈椎间盘突出压迫神经根，
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="u left"></div>
+                                <div class="u right"></div>
+
+                            </div>
+                            <div class="hover_con"></div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        var index = 0;
+                        var imgnum = $('.banner_re ul li').length;
+                        var nmun = '';
+
+                        function selectimg(index) {
+                            $('.banner_re ul li').eq(index).fadeIn(600).siblings().fadeOut(600);
+                            $('.hover_con a').eq(index).addClass('active').siblings('a').removeClass('active');
+                        }
+                        $('.banner_re .left').click(function () {
+                            index -= 1;
+                            if (index < 0) {
+                                index = imgnum - 1;
+                            }
+                            selectimg(index);
+                        });
+                        $('.banner_re .right').click(function () {
+                            index += 1;
+                            if (index > imgnum - 1) {
+                                index = 0;
+                            }
+                            selectimg(index);
+
+                        });
+                        for (var ni = 0; ni < imgnum; ni++) {
+                            nmun += "<a href='javascript:;'></a>";
+                        }
+                        $('.hover_con').html(nmun);
+                        $('.hover_con a').eq(0).addClass('active');
+
+                        $('.hover_con a').each(function (i) {
+                            $(this).click(function () {
+                                index = i;
+                                $('.banner_re ul li').eq(i).fadeIn(600).siblings().fadeOut(600);
+                                $(this).addClass('active').siblings('a').removeClass('active');
+                            });
+                        });
+                    </script>
+                    <!--/Slider-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+{/block}

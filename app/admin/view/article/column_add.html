@@ -33,6 +33,17 @@
             <input type="text" name="column_center" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
         </div>
     </div>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">文本域</label>
+        <div class="layui-input-block">
+            <!-- 加载编辑器的容器 -->
+            <script id="container" name="column_text" type="text/plain">
+
+            </script>
+        </div>
+    </div>
+
     <div class="layui-form-item">
         <div class="layui-input-block">
             <button type="submit" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
@@ -41,6 +52,15 @@
     </div>
 </form>
 
+<!-- 配置文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+
+</script>
 
 {/block}
 {block name="footer"}

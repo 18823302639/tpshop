@@ -143,6 +143,7 @@ return [
         '__CSS__' => '/layui/css',
         '__JS__'  => '/layui/lay/modules',
         '__IMG__' => '/layui/images',
+        '__STA__' => '/static',
 
     ],
     // 默认跳转页面对应的模板文件

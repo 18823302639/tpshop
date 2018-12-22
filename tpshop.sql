@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-20 18:48:47
+Date: 2018-12-22 18:26:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -69,13 +69,18 @@ CREATE TABLE `tp_column` (
   `column_dis` mediumint(1) DEFAULT NULL COMMENT '是否在前端显示',
   `column_time` datetime DEFAULT NULL COMMENT '写入时间',
   `category_id` mediumint(2) DEFAULT NULL COMMENT '类别表id',
+  `column_text` text COMMENT '内容',
   PRIMARY KEY (`column_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='栏目表';
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='栏目表';
 
 -- ----------------------------
 -- Records of tp_column
 -- ----------------------------
-INSERT INTO `tp_column` VALUES ('17', '关于我们', '0', null, '2018-12-20 18:33:11', '1');
+INSERT INTO `tp_column` VALUES ('17', '关于我们', '0', null, '2018-12-20 18:33:11', '1', null);
+INSERT INTO `tp_column` VALUES ('18', '123', '0', null, '2018-12-22 15:23:31', '1', null);
+INSERT INTO `tp_column` VALUES ('19', '123', '17', null, '2018-12-22 15:42:27', '2', null);
+INSERT INTO `tp_column` VALUES ('20', '12', '0', null, '2018-12-22 16:34:20', '1', '<p>456789153654<br/></p>');
+INSERT INTO `tp_column` VALUES ('21', '123', '19', null, '2018-12-22 18:14:55', '1', '<p>15345</p>');
 
 -- ----------------------------
 -- Table structure for `tp_goods`
@@ -91,10 +96,7 @@ CREATE TABLE `tp_goods` (
 -- ----------------------------
 -- Records of tp_goods
 -- ----------------------------
-INSERT INTO `tp_goods` VALUES ('10', '这是一个一级栏目', '0');
-INSERT INTO `tp_goods` VALUES ('11', '12345', '10');
 INSERT INTO `tp_goods` VALUES ('12', '123', '7');
-INSERT INTO `tp_goods` VALUES ('13', '关于我们', '0');
 
 -- ----------------------------
 -- Table structure for `tp_member`
@@ -113,3 +115,27 @@ CREATE TABLE `tp_member` (
 -- ----------------------------
 INSERT INTO `tp_member` VALUES ('4', '肖轩', 'e10adc3949ba59abbe56e057f20f883e', '2018-12-13 16:16:38');
 INSERT INTO `tp_member` VALUES ('5', 'admin', '63a9f0ea7bb98050796b649e85481845', '2018-12-20 11:29:56');
+
+-- ----------------------------
+-- Table structure for `tp_sys`
+-- ----------------------------
+DROP TABLE IF EXISTS `tp_sys`;
+CREATE TABLE `tp_sys` (
+  `sys_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '系统设置表',
+  `sys_name` varchar(50) DEFAULT NULL COMMENT '网站名称',
+  `sys_login` varchar(100) DEFAULT NULL COMMENT '网站login',
+  `sys_record` varchar(50) DEFAULT NULL COMMENT '备案号',
+  `sys_copyright` varchar(50) DEFAULT NULL COMMENT '版权',
+  `sys_address` varchar(200) DEFAULT NULL COMMENT '公司地址',
+  `sys_tel` char(20) DEFAULT NULL COMMENT '联系电话',
+  `sys_email` char(30) DEFAULT NULL COMMENT '联系邮箱',
+  `sys_stitle` varchar(50) DEFAULT NULL COMMENT 'seo标题',
+  `sys_sdes` varchar(100) DEFAULT NULL COMMENT 'seo描述',
+  `sys_skeyw` varchar(50) DEFAULT NULL COMMENT 'seo关键字',
+  PRIMARY KEY (`sys_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COMMENT='系统设置表';
+
+-- ----------------------------
+-- Records of tp_sys
+-- ----------------------------
+INSERT INTO `tp_sys` VALUES ('17', '3', null, '3', '3', '', '', '', '', '', '');
