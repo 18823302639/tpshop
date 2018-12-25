@@ -22,7 +22,7 @@ class Index extends Controller
 
     public function column(){
         $column_id = $_GET['column_id'];
-        
+
         $this->fetch('column');
     }
 }

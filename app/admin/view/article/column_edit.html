@@ -1,0 +1,90 @@
+{extend name="index/base"}
+
+{block name="body"}
+
+{volist name="list" id="val"}
+{/volist}
+<form class="layui-form" action="{:url('Article/column_edit')}" method="post">
+    <input name="column_id" type="hidden" value="{$arra.column_id}">
+    <div class="layui-form-item">
+        <label class="layui-form-label">选择栏目</label>
+        <div class="layui-input-block">
+            <select name="column_pid" lay-verify="required" disabled="disabled">
+                <option value="0">顶级栏目</option>
+                {notempty name="arr" }
+                {volist name="arr" id="vo"}
+                <option  value="{$vo.column_id}" {if condition="$vo.category_id eq $val.category_id"}selected{/if} >{$vo.laver|str_repeat='——',###}{$vo.column_center}</option>
+                {/volist}
+                {/notempty}
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">栏目类别</label>
+        <div class="layui-input-block">
+            <select name="category_id" disabled="disabled" >
+                <option value="{$arra.category_id}" >{$arra.category_name}</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">栏目名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="column_center" disabled="disabled"  lay-verify="required"  autocomplete="off" class="layui-input" value="{$arra.column_center}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">SEO标题</label>
+        <div class="layui-input-block">
+            <input type="text" name="content_stitle" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" value="{$arra.content_stitle}">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">SEO关键字</label>
+        <div class="layui-input-block">
+            <input type="text" name="content_sdesc" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" value="{$arra.content_skeyw}">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">SEO描述</label>
+        <div class="layui-input-block">
+            <textarea name="content_skeyw" placeholder="请输入内容" class="layui-textarea">{$arra.content_sdesc}</textarea>
+        </div>
+    </div>
+
+    <div class="layui-form-item ">
+        <label class="layui-form-label">文本域</label>
+        <div class="layui-input-block">
+            <!-- 加载编辑器的容器 -->
+            <script id="container" name="content_text" type="text/plain">
+                {$arra.content_text}
+            </script>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+
+</form>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+
+</script>
+
+{/block}
+{block name="footer"}
+
+{/block}
+

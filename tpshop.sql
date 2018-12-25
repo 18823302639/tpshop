@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-22 18:26:14
+Date: 2018-12-25 17:25:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -21,7 +21,7 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `tp_article`;
 CREATE TABLE `tp_article` (
   `article_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '文章主键id',
-  `goods_id` int(11) DEFAULT NULL COMMENT '用户表id',
+  `column_id` int(11) DEFAULT NULL COMMENT '栏目id',
   `article_title` char(50) DEFAULT NULL COMMENT '文章标题',
   `article_text` text COMMENT '文章内容',
   `article_author` char(20) DEFAULT NULL COMMENT '文章作者',
@@ -69,34 +69,38 @@ CREATE TABLE `tp_column` (
   `column_dis` mediumint(1) DEFAULT NULL COMMENT '是否在前端显示',
   `column_time` datetime DEFAULT NULL COMMENT '写入时间',
   `category_id` mediumint(2) DEFAULT NULL COMMENT '类别表id',
-  `column_text` text COMMENT '内容',
   PRIMARY KEY (`column_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='栏目表';
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='栏目表';
 
 -- ----------------------------
 -- Records of tp_column
 -- ----------------------------
-INSERT INTO `tp_column` VALUES ('17', '关于我们', '0', null, '2018-12-20 18:33:11', '1', null);
-INSERT INTO `tp_column` VALUES ('18', '123', '0', null, '2018-12-22 15:23:31', '1', null);
-INSERT INTO `tp_column` VALUES ('19', '123', '17', null, '2018-12-22 15:42:27', '2', null);
-INSERT INTO `tp_column` VALUES ('20', '12', '0', null, '2018-12-22 16:34:20', '1', '<p>456789153654<br/></p>');
-INSERT INTO `tp_column` VALUES ('21', '123', '19', null, '2018-12-22 18:14:55', '1', '<p>15345</p>');
+INSERT INTO `tp_column` VALUES ('17', '关于我们', '0', null, '2018-12-20 18:33:11', '1');
+INSERT INTO `tp_column` VALUES ('18', '123', '0', null, '2018-12-22 15:23:31', '1');
+INSERT INTO `tp_column` VALUES ('19', '123', '17', null, '2018-12-22 15:42:27', '2');
+INSERT INTO `tp_column` VALUES ('20', '12', '0', null, '2018-12-22 16:34:20', '1');
+INSERT INTO `tp_column` VALUES ('21', '123', '19', null, '2018-12-22 18:14:55', '1');
+INSERT INTO `tp_column` VALUES ('22', '图片', '17', null, '2018-12-25 14:15:55', '3');
 
 -- ----------------------------
--- Table structure for `tp_goods`
+-- Table structure for `tp_column_content`
 -- ----------------------------
-DROP TABLE IF EXISTS `tp_goods`;
-CREATE TABLE `tp_goods` (
-  `goods_id` int(11) NOT NULL AUTO_INCREMENT,
-  `goods_center` char(50) DEFAULT NULL COMMENT '商品名称',
-  `goods_pid` int(11) DEFAULT NULL COMMENT '商品父id',
-  PRIMARY KEY (`goods_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='栏目表';
+DROP TABLE IF EXISTS `tp_column_content`;
+CREATE TABLE `tp_column_content` (
+  `content_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '栏目内容id',
+  `column_id` int(11) DEFAULT NULL COMMENT '栏目表id',
+  `content_text` text COMMENT '栏目内容',
+  `content_stitle` varchar(50) DEFAULT NULL COMMENT 'seo标题',
+  `content_sdesc` varchar(50) DEFAULT NULL COMMENT 'seo描述',
+  `content_skeyw` varchar(50) DEFAULT NULL COMMENT 'seo关键字',
+  PRIMARY KEY (`content_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='栏目内容表';
 
 -- ----------------------------
--- Records of tp_goods
+-- Records of tp_column_content
 -- ----------------------------
-INSERT INTO `tp_goods` VALUES ('12', '123', '7');
+INSERT INTO `tp_column_content` VALUES ('1', '22', null, '发', '放大', '发生的');
+INSERT INTO `tp_column_content` VALUES ('2', '22', '<p>123456</p>', '发', '发生的', '放大');
 
 -- ----------------------------
 -- Table structure for `tp_member`
