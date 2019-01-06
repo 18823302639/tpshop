@@ -8,6 +8,10 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+use think\Route;
+
+//Route::rule('about/','index/Index/about');
+//Route::rule('about/:id','index/Index/about');
 
 return [
     '__pattern__' => [
@@ -19,3 +23,4 @@ return [
     ],
 
 ];
+

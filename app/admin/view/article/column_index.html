@@ -37,7 +37,8 @@
         <td>{$vo.column_time|substr=###,0,10}</td>
         <td>
             <a href="{:url('Article/column_edit',['id'=>$vo['column_id']])}" class="layui-btn notice">编辑</a>
-            <a href="{:url('Article/column_del',['id'=>$vo['column_id']])}" class="layui-btn notice">删除</a> <a href="{:url('Article/column_upd]',['id'=>$vo['column_id']])}" class="layui-btn ">修改</a> </td>
+            <a href="{:url('Article/column_del',['id'=>$vo['column_id']])}" class="layui-btn notice">删除</a>
+        </td>
     </tr>
     {/volist}
 

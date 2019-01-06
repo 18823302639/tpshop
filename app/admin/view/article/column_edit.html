@@ -6,19 +6,18 @@
 {/volist}
 <form class="layui-form" action="{:url('Article/column_edit')}" method="post">
     <input name="column_id" type="hidden" value="{$arra.column_id}">
+
     <div class="layui-form-item">
         <label class="layui-form-label">选择栏目</label>
         <div class="layui-input-block">
             <select name="column_pid" lay-verify="required" disabled="disabled">
-                <option value="0">顶级栏目</option>
-                {notempty name="arr" }
-                {volist name="arr" id="vo"}
-                <option  value="{$vo.column_id}" {if condition="$vo.category_id eq $val.category_id"}selected{/if} >{$vo.laver|str_repeat='——',###}{$vo.column_center}</option>
-                {/volist}
-                {/notempty}
+
+                <option value="{$arra.column_id}">{$arra.column_center}</option>
+
             </select>
         </div>
     </div>
+
     <div class="layui-form-item">
         <label class="layui-form-label">栏目类别</label>
         <div class="layui-input-block">

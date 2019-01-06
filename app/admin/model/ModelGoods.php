@@ -86,9 +86,8 @@ class ModelGoods extends Model
 
 
     /******栏目管理*****/
-    public function column_msel($arr = [],$id = 0,$laver = 0){
+    public function column_msel($arr = [],$id = '',$laver = ''){
         $arr = $this->index('tp_column');
-
         static $data = [];
         foreach($arr as $key=>$val){
             if($val['column_pid'] == $id){
@@ -113,5 +112,19 @@ class ModelGoods extends Model
         return $data;
     }
 
+    //栏目删除
+    public function column_mdel($arr = [] ,$id = '' ){
+
+        static $res = [];
+        $res[] = $id;
+        foreach($arr as $key=>$val){
+            if($val['column_pid'] == $id){
+                $res[] = $val['column_id'];
+                $arr[] = $val;
+                $this->column_mdel($arr,$val['column_id']);
+            }
+        }
+        return array_unique($res);
+    }
 
 }
