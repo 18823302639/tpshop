@@ -1,0 +1,2476 @@
+---------------------------------------------------------------
+[ 2018-12-16T18:44:31+08:00 ] 127.0.0.1 GET /
+[ info ] www.tpshop.com/ [运行时间：0.480865s][吞吐率：2.08req/s] [内存消耗：1,048.59kb] [文件加载：33]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\myphp_www\WWW\tpshop\app\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-16T18:45:38+08:00 ] 127.0.0.1 GET /admin
+[ info ] www.tpshop.com/admin [运行时间：0.286945s][吞吐率：3.48req/s] [内存消耗：1,460.07kb] [文件加载：43]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-16T18:51:58+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.209237s][吞吐率：4.78req/s] [内存消耗：1,961.22kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'tpshop'[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2018-12-16T19:19:22+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.492440s][吞吐率：2.03req/s] [内存消耗：2,206.63kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015013s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.075462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.014630s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000754s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:21:20+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.079159s][吞吐率：12.63req/s] [内存消耗：2,069.00kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000909s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.026676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:21:31+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.139585s][吞吐率：7.16req/s] [内存消耗：2,128.90kb] [文件加载：47]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010966s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.032247s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000475s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:21:33+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.068928s][吞吐率：14.51req/s] [内存消耗：2,069.00kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.023468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:42:17+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.095234s][吞吐率：10.50req/s] [内存消耗：2,129.16kb] [文件加载：47]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001586s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.029949s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:42:23+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.120783s][吞吐率：8.28req/s] [内存消耗：2,374.73kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.034370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:42:27+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.096060s][吞吐率：10.41req/s] [内存消耗：2,245.57kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010885s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.032654s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:42:29+08:00 ] 127.0.0.1 GET /admin/goods/goods_add.html
+[ info ] www.tpshop.com/admin/goods/goods_add.html [运行时间：0.087404s][吞吐率：11.44req/s] [内存消耗：2,108.48kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\goods_add.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.023374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000562s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:44:44+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.203657s][吞吐率：4.91req/s] [内存消耗：2,413.16kb] [文件加载：57]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001093s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.025995s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000464s ]
+[ error ] [8]未定义变量: arr[E:\myphp_www\WWW\tpshop\runtime\temp\f88533bff10b52b33d823957e423622d.php:123]
+---------------------------------------------------------------
+[ 2018-12-16T19:45:03+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.102768s][吞吐率：9.73req/s] [内存消耗：2,246.92kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.028443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:45:21+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.074280s][吞吐率：13.46req/s] [内存消耗：2,378.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000848s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.020606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:45:28+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.103100s][吞吐率：9.70req/s] [内存消耗：2,414.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010900s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.022255s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000449s ]
+[ error ] [8]未定义数组索引: goods_name[E:\myphp_www\WWW\tpshop\runtime\temp\f88533bff10b52b33d823957e423622d.php:126]
+---------------------------------------------------------------
+[ 2018-12-16T19:45:34+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.094283s][吞吐率：10.61req/s] [内存消耗：2,414.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010614s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.024240s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000505s ]
+[ error ] [8]未定义数组索引: goods_user[E:\myphp_www\WWW\tpshop\runtime\temp\f88533bff10b52b33d823957e423622d.php:126]
+---------------------------------------------------------------
+[ 2018-12-16T19:45:36+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.106960s][吞吐率：9.35req/s] [内存消耗：2,284.70kb] [文件加载：55]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010611s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.035286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000421s ]
+[ error ] [8]未定义数组索引: goods_user[E:\myphp_www\WWW\tpshop\runtime\temp\f88533bff10b52b33d823957e423622d.php:126]
+---------------------------------------------------------------
+[ 2018-12-16T19:45:56+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.099555s][吞吐率：10.04req/s] [内存消耗：2,414.80kb] [文件加载：57]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.027565s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000442s ]
+[ error ] [8]未定义数组索引: goods_centent[E:\myphp_www\WWW\tpshop\runtime\temp\f88533bff10b52b33d823957e423622d.php:126]
+---------------------------------------------------------------
+[ 2018-12-16T19:46:05+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.085112s][吞吐率：11.75req/s] [内存消耗：2,379.04kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.021674s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:46:24+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.094690s][吞吐率：10.56req/s] [内存消耗：2,246.94kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010417s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.020310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:46:49+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.099957s][吞吐率：10.00req/s] [内存消耗：2,378.60kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.029496s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:47:05+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.105255s][吞吐率：9.50req/s] [内存消耗：2,378.54kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010295s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.028219s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:47:20+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.095215s][吞吐率：10.50req/s] [内存消耗：2,378.48kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.028477s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:48:54+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.111595s][吞吐率：8.96req/s] [内存消耗：2,378.83kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.036145s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:49:23+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：2,414.79kb] [文件加载：57]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.021812s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000393s ]
+[ error ] [8]未定义数组索引: laver[E:\myphp_www\WWW\tpshop\runtime\temp\f88533bff10b52b33d823957e423622d.php:124]
+---------------------------------------------------------------
+[ 2018-12-16T19:49:53+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.087307s][吞吐率：11.45req/s] [内存消耗：2,247.41kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011322s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.025739s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:50:12+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.103272s][吞吐率：9.68req/s] [内存消耗：2,378.90kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010237s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:52:43+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.101001s][吞吐率：9.90req/s] [内存消耗：2,378.89kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010140s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:52:45+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.089664s][吞吐率：11.15req/s] [内存消耗：2,247.52kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.033474s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000549s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:53:54+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.109208s][吞吐率：9.16req/s] [内存消耗：2,378.91kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000920s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.040746s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000470s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:54:02+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.088669s][吞吐率：11.28req/s] [内存消耗：2,378.95kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000800s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.023049s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:57:14+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.094824s][吞吐率：10.55req/s] [内存消耗：2,379.21kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000979s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.025115s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:57:44+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.161554s][吞吐率：6.19req/s] [内存消耗：1,345.66kb] [文件加载：44]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [4]syntax error, unexpected ':'[E:\myphp_www\WWW\tpshop\app\admin\model\ModelGoods.php:36]
+---------------------------------------------------------------
+[ 2018-12-16T19:58:09+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.102754s][吞吐率：9.73req/s] [内存消耗：2,379.30kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.036022s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:58:32+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.176811s][吞吐率：5.66req/s] [内存消耗：2,069.00kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000944s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.026080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[ 2018-12-16T19:58:36+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.105222s][吞吐率：9.50req/s] [内存消耗：2,378.90kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009757s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.030080s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:01:08+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.102655s][吞吐率：9.74req/s] [内存消耗：2,379.87kb] [文件加载：53]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001498s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.025132s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:01:25+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.089285s][吞吐率：11.20req/s] [内存消耗：2,247.87kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000789s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.020897s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:01:27+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.033226s][吞吐率：30.10req/s] [内存消耗：1,230.55kb] [文件加载：38]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-16T20:13:55+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.048299s][吞吐率：20.70req/s] [内存消耗：1,337.22kb] [文件加载：44]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\admin\controller\Goods::goods_mdel()[E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php:59]
+---------------------------------------------------------------
+[ 2018-12-16T20:14:17+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.044847s][吞吐率：22.30req/s] [内存消耗：1,337.32kb] [文件加载：44]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\admin\controller\Goods::goods_mdel()[E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php:59]
+---------------------------------------------------------------
+[ 2018-12-16T20:14:19+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.092102s][吞吐率：10.86req/s] [内存消耗：2,249.86kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012063s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.027609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:14:20+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.088067s][吞吐率：11.35req/s] [内存消耗：2,250.05kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.034778s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:14:22+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.044067s][吞吐率：22.69req/s] [内存消耗：1,337.02kb] [文件加载：44]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\admin\controller\Goods::goods_mdel()[E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php:59]
+---------------------------------------------------------------
+[ 2018-12-16T20:15:15+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.094207s][吞吐率：10.61req/s] [内存消耗：2,181.99kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 2 for app\admin\Model\ModelGoods::goods_mdel(), called in E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php on line 59 and defined[E:\myphp_www\WWW\tpshop\app\admin\model\ModelGoods.php:40]
+---------------------------------------------------------------
+[ 2018-12-16T20:17:23+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.124609s][吞吐率：8.03req/s] [内存消耗：2,124.75kb] [文件加载：47]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.028870s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:18:50+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.103922s][吞吐率：9.62req/s] [内存消耗：2,132.66kb] [文件加载：47]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.040963s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:20:22+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.083494s][吞吐率：11.98req/s] [内存消耗：2,132.68kb] [文件加载：47]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001269s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.031350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:21:18+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.113482s][吞吐率：8.81req/s] [内存消耗：2,129.39kb] [文件加载：47]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010685s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.036997s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:24:12+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.082400s][吞吐率：12.14req/s] [内存消耗：2,223.73kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000900s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.029418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000456s ]
+[ error ] [0]method not exist:think\db\Query->tale[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:96]
+---------------------------------------------------------------
+[ 2018-12-16T20:24:22+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.145273s][吞吐率：6.88req/s] [内存消耗：2,238.75kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000612s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.019355s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000382s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tpshop.tp_shop' doesn't exist[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-12-16T20:24:43+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.107062s][吞吐率：9.34req/s] [内存消耗：2,238.74kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010511s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.020245s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000453s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tpshop.tp_shop' doesn't exist[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-12-16T20:24:45+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.113695s][吞吐率：8.80req/s] [内存消耗：2,239.03kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000974s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.021566s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000464s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tpshop.tp_shop' doesn't exist[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[ 2018-12-16T20:25:19+08:00 ] 127.0.0.1 GET /admin/goods/goods_del/id/6.html
+[ info ] www.tpshop.com/admin/goods/goods_del/id/6.html [运行时间：0.276232s][吞吐率：3.62req/s] [内存消耗：2,370.27kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/goods_del/id/6_html' => '',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->goods_del[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009932s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.020802s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] DELETE FROM `tp_goods`    WHERE  `goods_id` IN (6,7,8,9) [ RunTime:0.089549s ]
+---------------------------------------------------------------
+[ 2018-12-16T20:25:22+08:00 ] 127.0.0.1 GET /admin/goods/index.html
+[ info ] www.tpshop.com/admin/goods/index.html [运行时间：0.114384s][吞吐率：8.74req/s] [内存消耗：2,244.05kb] [文件加载：51]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/goods/goods_del/id/6.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Goods->index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\goods\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010951s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.021379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000447s ]

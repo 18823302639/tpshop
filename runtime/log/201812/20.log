@@ -1,0 +1,2437 @@
+---------------------------------------------------------------
+[ 2018-12-20T20:35:51+08:00 ] 127.0.0.1 GET /admin/article/article_add.html?article_title=&phone=&email=&article_thum=
+[ info ] www.tpshop.com/admin/article/article_add.html?article_title=&phone=&email=&article_thum= [运行时间：0.085720s][吞吐率：11.67req/s] [内存消耗：1,481.20kb] [文件加载：43]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'article_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/article_add.html?article_title=&phone=&email=&article_thum=',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/article_add_html' => '',
+  'article_title' => '',
+  'phone' => '',
+  'email' => '',
+  'article_thum' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->article_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\article_add.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-20T20:35:59+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.606010s][吞吐率：1.65req/s] [内存消耗：2,100.00kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/article_add.html?article_title=&phone=&email=&article_thum=',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061031s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.137609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.248156s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:37:01+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.198124s][吞吐率：5.05req/s] [内存消耗：2,367.01kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015484s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.054692s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.039066s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:37:08+08:00 ] 127.0.0.1 POST /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.148737s][吞吐率：6.72req/s] [内存消耗：1,972.88kb] [文件加载：49]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.tpshop.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '47',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+  'column_pid' => '0',
+  'category_id' => '1',
+  'column_center' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025916s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.047018s ]
+[ sql ] [ SQL ] INSERT INTO `tp_column` (`column_pid` , `category_id` , `column_center` , `column_time`) VALUES (0 , 1 , '123456' , '2018-12-20 20:37:08') [ RunTime:0.010793s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:37:11+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.085017s][吞吐率：11.76req/s] [内存消耗：1,971.17kb] [文件加载：48]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007659s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.029835s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:37:33+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.142765s][吞吐率：7.00req/s] [内存消耗：2,236.63kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_goods` [ RunTime:0.047793s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_goods` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.032881s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:49:29+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.152553s][吞吐率：6.56req/s] [内存消耗：2,240.03kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002101s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.049504s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.037995s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:51:19+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.137222s][吞吐率：7.29req/s] [内存消耗：2,240.05kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.040294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.030519s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000915s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:52:18+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.132860s][吞吐率：7.53req/s] [内存消耗：2,122.58kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000857s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.029253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.032876s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:52:42+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.073152s][吞吐率：13.67req/s] [内存消耗：2,121.36kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.028379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:53:23+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.129112s][吞吐率：7.75req/s] [内存消耗：2,122.58kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.036494s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.034063s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:54:24+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.095075s][吞吐率：10.52req/s] [内存消耗：2,121.39kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.030464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2018-12-20T20:55:06+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.249834s][吞吐率：4.00req/s] [内存消耗：2,223.88kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000770s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.035568s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000378s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:55:15+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.102109s][吞吐率：9.79req/s] [内存消耗：2,223.88kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.042246s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000412s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:56:11+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.091351s][吞吐率：10.95req/s] [内存消耗：2,223.96kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001274s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.030523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000474s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:56:17+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.087302s][吞吐率：11.45req/s] [内存消耗：2,223.95kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.030534s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000468s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:57:40+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.085609s][吞吐率：11.68req/s] [内存消耗：2,223.74kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.031589s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000415s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:57:42+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.080769s][吞吐率：12.38req/s] [内存消耗：2,223.95kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.032479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000459s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:58:30+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.086766s][吞吐率：11.53req/s] [内存消耗：2,223.74kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001331s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.028349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000449s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:58:43+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.095865s][吞吐率：10.43req/s] [内存消耗：2,223.74kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.039198s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000519s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:58:47+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.085860s][吞吐率：11.65req/s] [内存消耗：2,223.74kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000772s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.034146s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000485s ]
+[ error ] [8]Array to string conversion[E:\myphp_www\WWW\tpshop\thinkphp\library\think\db\Query.php:481]
+---------------------------------------------------------------
+[ 2018-12-20T20:59:03+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.141312s][吞吐率：7.08req/s] [内存消耗：2,373.72kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.035356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.034088s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000405s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:06+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.289606s][吞吐率：3.45req/s] [内存消耗：2,380.34kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.139922s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.028358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000432s ]
+[ error ] [4]语法错误: unexpected ','[E:\myphp_www\WWW\tpshop\runtime\temp\1f0027135de286da638f59006a0f6d0a.php:104]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:14+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.121401s][吞吐率：8.24req/s] [内存消耗：2,374.09kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.034153s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.027310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:25+08:00 ] 127.0.0.1 POST /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.115831s][吞吐率：8.63req/s] [内存消耗：1,973.02kb] [文件加载：49]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.tpshop.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+  'column_pid' => '17',
+  'category_id' => '1',
+  'column_center' => '123',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001391s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.034613s ]
+[ sql ] [ SQL ] INSERT INTO `tp_column` (`column_pid` , `category_id` , `column_center` , `column_time`) VALUES (17 , 1 , '123' , '2018-12-20 21:00:25') [ RunTime:0.000728s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:28+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.140107s][吞吐率：7.14req/s] [内存消耗：1,972.77kb] [文件加载：48]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000637s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.047221s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:32+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.157645s][吞吐率：6.34req/s] [内存消耗：2,244.75kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.035698s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.050116s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:51+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.113375s][吞吐率：8.82req/s] [内存消耗：2,382.43kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.031122s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.028269s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000394s ]
+[ error ] [4]语法错误: unexpected '',###(str_repeat($vo['' (T_CONSTANT_ENCAPSED_STRING)[E:\myphp_www\WWW\tpshop\runtime\temp\1f0027135de286da638f59006a0f6d0a.php:104]
+---------------------------------------------------------------
+[ 2018-12-20T21:00:57+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.160017s][吞吐率：6.25req/s] [内存消耗：2,375.94kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.044953s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.037256s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:01:19+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.140304s][吞吐率：7.13req/s] [内存消耗：2,382.27kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000685s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.042352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.031237s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000394s ]
+[ error ] [4]语法错误: unexpected '--' (T_DEC), expecting ',' or ';'[E:\myphp_www\WWW\tpshop\runtime\temp\1f0027135de286da638f59006a0f6d0a.php:104]
+---------------------------------------------------------------
+[ 2018-12-20T21:01:24+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.125954s][吞吐率：7.94req/s] [内存消耗：2,375.94kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.032274s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.037745s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000410s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:01:27+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.096760s][吞吐率：10.33req/s] [内存消耗：1,972.77kb] [文件加载：48]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.041919s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:02:20+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.149246s][吞吐率：6.70req/s] [内存消耗：2,142.30kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000751s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.037349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.002323s ]
+[ error ] [8]未定义数组索引: laver[E:\myphp_www\WWW\tpshop\runtime\temp\28e9a35d2d6a7d2d10830ace7e89494a.php:127]
+---------------------------------------------------------------
+[ 2018-12-20T21:06:51+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.099814s][吞吐率：10.02req/s] [内存消耗：2,227.32kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001734s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.033878s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000482s ]
+[ error ] [8]未定义变量: column_msele[E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php:49]
+---------------------------------------------------------------
+[ 2018-12-20T21:06:58+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.106247s][吞吐率：9.41req/s] [内存消耗：2,130.35kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000913s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.050455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000461s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:07:24+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.081104s][吞吐率：12.33req/s] [内存消耗：2,244.86kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000720s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.027968s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000397s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:07:26+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.100616s][吞吐率：9.94req/s] [内存消耗：2,245.09kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000710s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.043571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:07:31+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.097905s][吞吐率：10.21req/s] [内存消耗：2,245.34kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000716s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.048792s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:08:24+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.094105s][吞吐率：10.63req/s] [内存消耗：2,127.55kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000651s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.038849s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000571s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:09:03+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.090787s][吞吐率：11.01req/s] [内存消耗：2,130.06kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.037445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:11:08+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.103146s][吞吐率：9.69req/s] [内存消耗：2,127.52kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003886s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.032086s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:12:39+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.086422s][吞吐率：11.57req/s] [内存消耗：2,130.35kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.035832s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:14:42+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.113750s][吞吐率：8.79req/s] [内存消耗：2,245.09kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002055s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.036912s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000560s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:14:48+08:00 ] 127.0.0.1 GET /admin/article/column_add.html
+[ info ] www.tpshop.com/admin/article/column_add.html [运行时间：0.122615s][吞吐率：8.16req/s] [内存消耗：2,246.84kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_add_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_add[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_add.html [ array (
+  0 => 'arr',
+  1 => 'list',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000679s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.034891s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_category` [ RunTime:0.032317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_category` [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:14:50+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.097556s][吞吐率：10.25req/s] [内存消耗：2,244.95kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.033322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000294s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:15:09+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.076456s][吞吐率：13.08req/s] [内存消耗：2,130.35kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000651s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.030618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` [ RunTime:0.000428s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:15:48+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.117253s][吞吐率：8.53req/s] [内存消耗：2,130.03kb] [文件加载：46]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.049382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:15:54+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.087478s][吞吐率：11.43req/s] [内存消耗：2,245.10kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.037040s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:05+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.084301s][吞吐率：11.86req/s] [内存消耗：2,245.37kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.036189s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:17+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.091177s][吞吐率：10.97req/s] [内存消耗：2,376.42kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.032314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000489s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:30+08:00 ] 127.0.0.1 GET /admin/article/column_del/id/17.html
+[ info ] www.tpshop.com/admin/article/column_del/id/17.html [运行时间：0.085674s][吞吐率：11.67req/s] [内存消耗：1,313.65kb] [文件加载：42]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_del',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_del/id/17_html' => '',
+  'id' => '17',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-20T21:16:32+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：0.091049s][吞吐率：10.98req/s] [内存消耗：2,244.93kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000741s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.042293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:51+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.322380s][吞吐率：3.10req/s] [内存消耗：2,208.18kb] [文件加载：54]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/article/column_index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.072899s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.044613s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000988s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:55+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.092911s][吞吐率：10.76req/s] [内存消耗：2,069.85kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.042156s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:58+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.108653s][吞吐率：9.20req/s] [内存消耗：2,069.85kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.050781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:58+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.082985s][吞吐率：12.05req/s] [内存消耗：2,069.85kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000842s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.032607s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:16:59+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.077581s][吞吐率：12.89req/s] [内存消耗：2,069.85kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.022167s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:17:02+08:00 ] 127.0.0.1 GET /admin/index/member.html
+[ info ] www.tpshop.com/admin/index/member.html [运行时间：0.098790s][吞吐率：10.12req/s] [内存消耗：2,069.85kb] [文件加载：52]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tpshop.com/admin/index/member.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/member_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->member[ E:\myphp_www\WWW\tpshop\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\index\member.html [ array (
+  0 => 'page',
+  1 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_member` [ RunTime:0.038394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_member` LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_member` ORDER BY `member_id` ASC LIMIT 0,15 [ RunTime:0.000480s ]
+---------------------------------------------------------------
+[ 2018-12-20T21:51:44+08:00 ] 127.0.0.1 GET /admin/article/column_index.html
+[ info ] www.tpshop.com/admin/article/column_index.html [运行时间：1.128986s][吞吐率：0.89req/s] [内存消耗：2,244.63kb] [文件加载：50]
+[ info ] [ LANG ] E:\myphp_www\WWW\tpshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'column_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6427795456; pgv_si=s6016609280; PHPSESSID=8t5lsi7lhgce9cctsvd0v2vo57',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tpshop.com',
+)
+[ info ] [ PARAM ] array (
+  '/admin/article/column_index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Article->column_index[ E:\myphp_www\WWW\tpshop\app\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\myphp_www\WWW\tpshop\public/../app/admin\view\article\column_index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.182707s ] mysql:host=127.0.0.1;dbname=tpshop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_column` [ RunTime:0.424754s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_column` `co` INNER JOIN `tp_category` `ca` ON `co`.`category_id`=`ca`.`category_id` [ RunTime:0.458434s ]
