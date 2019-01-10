@@ -1,0 +1,89 @@
+{extend name="index/base"}
+{block name="meta"}
+<title>友情链接</title>
+{/block}
+
+
+
+{block name="body"}
+
+
+<div class="layui-col-md12">
+    <div class="layui-elem-quote ">链接列表</div>
+</div>
+<div class="layui-col-md12 ">
+    <div class="layui-elem-quote ">
+        <a href="http://www.layui.com" class="layui-btn layui-btn-normal">删除链接</a>
+    </div>
+</div>
+<table class="layui-table">
+    <colgroup>
+        <col width="100">
+        <col width="120">
+        <col width="150">
+        <col width="150">
+        <col width="500">
+        <col width="250">
+        <col width="200">
+        <col width="100">
+        <col>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>全选/不选</th>
+        <th>用户名</th>
+        <th>联系电话</th>
+        <th>电子邮箱</th>
+        <th>留言内容</th>
+        <th>上传附件</th>
+        <th>时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {volist name="arr" id="vo"}
+    <tr>
+        <td><input type="checkbox" name=""></td>
+        <td> {$vo.leaving_name} </td>
+        <td> {$vo.leaving_tel} </td>
+        <td> {$vo.leaving_email}</td>
+        <td> {$vo.leaving_text} </td>
+        <td><a href="{:url('Uploads/xiazfile',['id'=>$vo.leaving_id])}"> {$vo.leaving_file} </a> </td>
+        <td> {$vo.leaving_time}</td>
+        <td>
+            <a href="{:url('Leaving/leav_del',['id'=>$vo['leaving_id']])}" class="layui-btn notice">删除</a>
+        </td>
+    </tr>
+    {/volist}
+
+    </tbody>
+</table>
+
+{/block}
+
+{block name="footer"}
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        function xiaz(){
+            $.ajax({
+                type:"post",
+                url:url,
+                dataType:"json",
+                data:data,
+                success:function(){
+
+                },
+                error:function(){
+
+                }
+
+            });
+        }
+
+    });
+
+</script>
+{/block}
+

@@ -1,0 +1,93 @@
+{extend name="index/base"}
+{block name="meta"}
+<title>友情链接</title>
+{/block}
+
+
+
+{block name="body"}
+
+
+<div class="layui-col-md12">
+    <div class="layui-elem-quote ">链接列表</div>
+</div>
+<div class="layui-col-md12 ">
+    <div class="layui-elem-quote ">
+        <a href="http://www.layui.com" class="layui-btn layui-btn-normal">删除链接</a>
+        <a href="{:url('Link/link_edit')}" class="layui-btn layui-btn-warm">添加链接</a>
+    </div>
+</div>
+<table class="layui-table">
+    <colgroup>
+        <col width="150">
+        <col width="250">
+        <col width="500">
+        <col width="500">
+        <col>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>全选/全不选</th>
+        <th>链接名</th>
+        <th>链接类别</th>
+        <th>添加时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {volist name="arr" id="vo"}
+    <tr>
+        <td><input type="checkbox" name=""></td>
+        <td>{$vo.link_name} </td>
+        <td> {$vo.link_url} </td>
+        <td> {$vo.link_time}</td>
+        <td>
+            <a href="{:url('Link/link_edit',['id'=>$vo['link_id']])}" class="layui-btn notice">编辑</a>
+            <a href="{:url('Link/link_del',['id'=>$vo['link_id']])}" class="layui-btn notice">删除</a>
+        </td>
+    </tr>
+    {/volist}
+
+    </tbody>
+</table>
+
+{/block}
+
+{block name="footer"}
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    function fn(){
+        var data = $('form').serializeArray();
+        console.log(data);
+        var files = $('#file').prop('files');
+        // var file = this.files[0];
+
+        var formdata = new FormData();
+        console.log(files[0]);
+        formdata.append("file",'123',files[0]);
+
+        console.log(formdata);
+        url = "{:url('Article/article_add')}";
+        $.ajax({
+
+            type:'post',
+            url:url,
+            dataType:'json',
+            cache:false,
+            processDate:false,
+            contentType:false,
+            data:data,
+            success:function(succ){
+                console.log('成功：'+succ);
+            },
+            error:function(error){
+                console.log('失败：'+error);
+            }
+
+        });
+
+    }
+</script>
+{/block}
+

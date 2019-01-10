@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {block name="meta"}{/block}
     <title>物业管理,物业管理软件,设施管理软件系统供应商</title>
     <link href="/static/css/style.css" rel=stylesheet>
     <script type="text/javascript" src="/static/js/jquery-1.7.2.min.js"></script>
@@ -23,6 +24,7 @@
                 {volist name="arr" id="vo"}
                 <li><a href="{:url('Index/about',['id'=>$vo.column_id])}">{$vo.column_center}<span>HOME</span></a></li>
                 {/volist}
+                <li><a href="{:url('Index/worte')}">用户留言<span>HOME</span></a></li>
             </ul>
         </div>
         <div class="tel">15012345678<br /></div>

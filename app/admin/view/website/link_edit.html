@@ -1,0 +1,46 @@
+{extend name="index/base"}
+
+{block name="body"}
+
+
+<form class="layui-form" action="{:url('Link/link_edit')}" method="post">
+    <input name="link_id" type="hidden" value="{$arr['link_id']}">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">链接名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="link_name"  lay-verify="required"  autocomplete="off" class="layui-input" value="{$arr.link_name}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">URL地址</label>
+        <div class="layui-input-block">
+            <input type="text" name="link_url" required  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input" value="{$arr.link_url}">
+        </div>
+    </div>
+
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+
+</form>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+
+</script>
+
+{/block}
+{block name="footer"}
+
+{/block}
+
