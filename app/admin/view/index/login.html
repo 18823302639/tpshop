@@ -16,12 +16,14 @@
 
 <div class="layui-body" style="padding:25px;">
     <form class="layui-form" action="{:url('Index/login')}" lay-filter="example" method="post">
+
         <div class="layui-form-item">
             <label class="layui-form-label">会员名称</label>
             <div class="layui-input-block">
                 <input type="text" name="member_name" lay-verify="title" autocomplete="off" placeholder="请输入会员名称" class="layui-input">
             </div>
         </div>
+
         <div class="layui-form-item">
             <label class="layui-form-label">会员密码</label>
             <div class="layui-input-block">
@@ -30,22 +32,28 @@
         </div>
 
         <div class="layui-form-item">
+            <label class="layui-form-label">短信验证码</label>
+            <div class="layui-input-block">
+                <input type="text" name="" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
             <div class="layui-input-block">
                 <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
             </div>
         </div>
+        
     </form>
 </div>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="/layui/layui.js"></script>
 <script>
     //Demo
     layui.use('form', function(){
         var form = layui.form;
 
-        //监听提交
-        form.on('submit(formDemo)', function(data){
-            layer.msg(JSON.stringify(data.field));
-            return false;
-        });
+
     });
 </script>
 
