@@ -7,6 +7,8 @@
  */
 namespace app\admin\Controller;
 
+use \vendor\PHPMailer;
+
 class Files extends \think\Controller
 {
 
@@ -19,6 +21,10 @@ class Files extends \think\Controller
         header( "Content-Disposition:  attachment;  filename=".$fileName); //告诉浏览器通过附件形式来处理文件
         header('Content-Length: ' . filesize($fileName)); //下载文件大小
         readfile($fileName);  //读取文件内容
+    }
+
+    public function email(){
+      
     }
 
 }
