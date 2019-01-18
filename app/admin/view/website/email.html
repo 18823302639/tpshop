@@ -1,0 +1,95 @@
+{extend name="index/base"}
+{block name="meta"}
+<title>友情链接</title>
+{/block}
+
+
+
+{block name="body"}
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+    <legend>邮箱配置</legend>
+</fieldset>
+<form class="layui-form layui-form-pane" action="{:url('Files/emails')}" method="post">
+    <div class="layui-form-item">
+        <label class="layui-form-label">服务器</label>
+        <div class="layui-input-block">
+            <input type="text" name="email_host" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_host}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">SMTP</label>
+        <div class="layui-input-block">
+            <input type="text" name="email_port" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_port}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发件人</label>
+        <div class="layui-input-block">
+            <input type="text" name="email_name" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_name}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发件人邮箱</label>
+        <div class="layui-input-block">
+            <input type="text" name="email_user" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_user}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">邮箱验证码</label>
+        <div class="layui-input-block">
+            <input type="password" name="email_pwd" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_pwd}">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">收件人</label>
+        <div class="layui-input-block">
+            <input type="text" name="email_toname" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_toname}">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">邮件主题</label>
+        <div class="layui-input-block">
+            <input type="text" name="email_title" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$arr.0.email_title}">
+        </div>
+    </div>
+
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">邮件内容</label>
+        <div class="layui-input-block">
+            <textarea placeholder="请输入内容" name="email_content" class="layui-textarea">{$arr.0.email_content}</textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <button type="submit" class="layui-btn" >保存</button>
+        <button type="button" onclick="xiaz()" class="layui-btn" >发送邮件</button>
+    </div>
+</form>
+
+{/block}
+
+{block name="footer"}
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+    function xiaz(){
+        var url = "{:url('Files/emailFn')}";
+        $.ajax({
+            type:"post",
+            url:url,
+            dataType:"json",
+            success:function(succ){
+                layer.msg('发送邮件成功');
+            },
+            error:function(err){
+                layer.msg('发送邮件失败');
+            }
+
+        });
+    }
+
+
+</script>
+{/block}
+

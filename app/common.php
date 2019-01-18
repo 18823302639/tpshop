@@ -10,3 +10,10 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+class Common extends \think\Controller{
+
+    public function index(){
+
+    }
+
+}
